@@ -3,8 +3,9 @@ package com.hensen.greendaodemo.Base;
 import android.app.Application;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.hensen.greendaodemo.DaoMaster;
-import com.hensen.greendaodemo.DaoSession;
+import com.hensen.greendaodemo.Bean.DaoMaster;
+import com.hensen.greendaodemo.Bean.DaoSession;
+
 
 /**
  * =====作者=====

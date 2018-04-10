@@ -1,16 +1,13 @@
 package com.hensen.greendaodemo.Activity;
 
-import android.os.Handler;
-import android.os.Message;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.hensen.greendaodemo.Adapter.ShopListAdapter;
+import com.hensen.greendaodemo.Bean.Goods;
 import com.hensen.greendaodemo.Bean.Shop;
 import com.hensen.greendaodemo.Dao.LoveDao;
 import com.hensen.greendaodemo.R;
@@ -84,7 +81,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         shop.setPrice("19.40");
         shop.setSell_num(15263);
         shop.setName("正宗梅菜扣肉 聪厨梅干菜扣肉 家宴常备方便菜虎皮红烧肉 2盒包邮" + i++);
+        shop.setKucun("110");
         LoveDao.insertLove(shop);
+        Goods goods=new Goods();
+        goods.setAddress("湖北孝感");
+        goods.setImage_url("http://www.baidu.com");
+        goods.setPrice("888.88");
+        goods.setSell_num(666);
+        goods.setKucun("101");
+        LoveDao.insertGoods(goods);
         queryDate();
     }
 

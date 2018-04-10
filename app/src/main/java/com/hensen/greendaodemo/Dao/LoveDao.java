@@ -1,8 +1,9 @@
 package com.hensen.greendaodemo.Dao;
 
 import com.hensen.greendaodemo.Base.BaseApplication;
+import com.hensen.greendaodemo.Bean.Goods;
 import com.hensen.greendaodemo.Bean.Shop;
-import com.hensen.greendaodemo.ShopDao;
+import com.hensen.greendaodemo.Bean.ShopDao;
 
 import java.util.List;
 
@@ -18,6 +19,9 @@ public class LoveDao {
      */
     public static void insertLove(Shop shop) {
         BaseApplication.getDaoInstant().getShopDao().insert(shop);
+    }
+    public static void insertGoods(Goods good) {
+        BaseApplication.getDaoInstant().getGoodsDao().insert(good);
     }
 
     /**

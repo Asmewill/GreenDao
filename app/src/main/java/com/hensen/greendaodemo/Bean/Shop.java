@@ -1,13 +1,8 @@
 package com.hensen.greendaodemo.Bean;
 
-import android.widget.ImageView;
-
 import org.greenrobot.greendao.annotation.Entity;
-import org.greenrobot.greendao.annotation.Id;
-
-import java.io.Serializable;
-
 import org.greenrobot.greendao.annotation.Generated;
+import org.greenrobot.greendao.annotation.Id;
 import org.greenrobot.greendao.annotation.Property;
 import org.greenrobot.greendao.annotation.Unique;
 
@@ -30,18 +25,30 @@ public class Shop{
     private int sell_num;
     private String image_url;
     private String address;
+    private String  kucun;
+
+    public String getKucun() {
+        return kucun;
+    }
+
+    public void setKucun(String kucun) {
+        this.kucun = kucun;
+    }
+
     private int type;
-    @Generated(hash = 1304458862)
+    @Generated(hash = 739996538)
     public Shop(Long id, String name, String price, int sell_num, String image_url,
-            String address, int type) {
+            String address, String kucun, int type) {
         this.id = id;
         this.name = name;
         this.price = price;
         this.sell_num = sell_num;
         this.image_url = image_url;
         this.address = address;
+        this.kucun = kucun;
         this.type = type;
     }
+
     @Generated(hash = 633476670)
     public Shop() {
     }

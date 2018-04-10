@@ -57,7 +57,7 @@ public class ShopListAdapter extends BaseAdapter {
         holder.tv_name.setText(shop.getName());
         holder.tv_price.setText(shop.getPrice() + "");
         holder.tv_price_discount.setPaintFlags(Paint.STRIKE_THRU_TEXT_FLAG);
-        holder.tv_sell_num.setText("已售" + shop.getSell_num() + "件");
+        holder.tv_sell_num.setText("已售" + shop.getSell_num() + "件"+"   库存:"+shop.getKucun());
         return convertView;
     }
 
