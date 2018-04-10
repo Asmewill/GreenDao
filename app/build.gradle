@@ -14,7 +14,7 @@ android {
     }
     //greendao配置
     greendao {
-        //版本号，升级时可配置
+        //版本号，升级时可配置，会删除数据库中所有表的数据
         schemaVersion 2
     }
     buildTypes {
