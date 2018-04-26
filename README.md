@@ -1,4 +1,4 @@
-<<<<<<< .mine
+
 # GreenDaoDemo
 GreenDao3.2的使用，仿购物车Demo
 
@@ -52,6 +52,7 @@ public class LoveDao {
 ## 原文地址BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
 
 CSDN博客：http://blog.csdn.net/qq_30379689/article/details/54410838
+简书：https://www.jianshu.com/p/f767d741b012
 =======
 # GreenDao
 GreenDao使用的Demo
